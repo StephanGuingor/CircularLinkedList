@@ -38,7 +38,7 @@ print("turn player",circ.retrieveTurn())
 
 ```
 Output:
-```
+```swift
 2
 1
 4
@@ -59,7 +59,7 @@ circ.popItem(data:1)
 circ.traverse()
 ```
 Output:
-```
+```swift
 2
 1
 4
