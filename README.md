@@ -63,7 +63,7 @@ Output:
 2
 1
 4
-1 was deleted
+1 was deleted // result of the popItem function
 2
 4
 
