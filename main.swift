@@ -62,7 +62,7 @@ class CircularLinkedList{
         while (currentNode != nil){
             if currentNode?.next?.data == data{
                 print("\(currentNode!.next!.data) was deleted")
-                
+                //Connects nodes by skipping through the deleted node
                 currentNode?.next = currentNode?.next?.next
                 break
             }
@@ -96,7 +96,6 @@ circ.addToListEnd(data:4)
 circ.popItem(data:1)
 circ.popItem(data:4)
 
-// circ.popItem(data:2)
+
 circ.traverse()
 
-// print(circ.last!.next!.next!.data)
