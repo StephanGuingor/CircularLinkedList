@@ -22,7 +22,7 @@ Examples of usage:
 
 
 With **Turns**:
-```
+```swift
 let circ = CircularLinkedList()
 circ.addToEmptyList(data:2)
 circ.addToListEnd(data:1)
@@ -49,7 +49,7 @@ turn player 2
 
 ```
 With out:
-```
+```swift
 let circ = CircularLinkedList()
 circ.addToEmptyList(data:2)
 circ.addToListEnd(data:1)
