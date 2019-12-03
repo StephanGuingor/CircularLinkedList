@@ -12,4 +12,61 @@ The functions it contains:
 
 **Add To End** - Adds a value to the end of the list without loosing its structure
 
+If you are using the version with turns:
+
+**Retrieve Turn** - Returns data of current node
+
+**Update Turn** - Updates current node with its next link
+
+Examples of usage:
+
+
+With **Turns**:
+```
+let circ = CircularLinkedList()
+circ.addToEmptyList(data:2)
+circ.addToListEnd(data:1)
+circ.addToListEnd(data:4)
+circ.traverse() //Will print the data of each node it traverses
+print("turn player",circ.retrieveTurn())
+circ.updateTurn()
+print("turn player",circ.retrieveTurn())
+circ.updateTurn()
+print("turn player",circ.retrieveTurn())
+circ.updateTurn()
+print("turn player",circ.retrieveTurn())
+
+```
+Output:
+```
+2
+1
+4
+turn player 2
+turn player 1
+turn player 4
+turn player 2
+
+```
+With out:
+```
+let circ = CircularLinkedList()
+circ.addToEmptyList(data:2)
+circ.addToListEnd(data:1)
+circ.addToListEnd(data:4)
+circ.traverse() //Will print the data of each node it traverses
+circ.popItem(data:1)
+circ.traverse()
+```
+Output:
+```
+2
+1
+4
+1 was deleted
+2
+4
+
+```
 - Stephan GF
+
